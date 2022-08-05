@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+            color: aqua;
+        }
+       /* com esses codigos abaixo, é possiel mudar o padrão de formatação de links */
+       a{
+            color: green;
+        }
+       /* utilizando essas pseudo classes eu altero a formatação dos links seja na cor primaria ou na hora de passar o mouse
+        em cima com o a:hover ou após clicado com a:visited e ainda temos o active, que altera a cor na hora do click*/
+        a:hover{
+            color: red;
+            background-color:  rgb(204, 204, 204);
+        }
+        a:visited{
+            color: black;
+        }
+        /* essa pseudo classe serve para formatar apenas o stilo do link e manter os outros padrões
+        a:link{
+            color: gainsboro;
+        }*/
+        ul li{
+            list-style-type: square;
+        }
+        ol li{
+            list-style-type: upper-alpha;
+            list-style-position: inside;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="01_tags.html">veja o arquivo 01_tags</a> |
+    <a href="02_exercicio_curriculo.html">veja o arquivo 02_exercicio_curriculo</a>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+</body>
+</html>

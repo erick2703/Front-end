@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina para CSS</title>
+<!-- tudo que está aqui nessa area é o css-->
+    <style>
+        body{
+           /* background-image: url("./Imagens\ Pagina/IMG_5645.JPG");*/
+           background-color: beige;
+            
+        }
+        h1{
+            font-family: Arial, Arial, Helvetica, sans-serif;
+            font-size: 48px;
+            font-style:normal;
+            font-variant: small-caps;
+            color: purple;
+            background-color: red;
+            /* utilizamos o margin para espassamento externo do elemento*/
+            margin-left: 90px;
+            margin-top: 50px;
+            /* utilizamos o padding para preenchimento interno do elemento*/
+            padding-left: 25px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            /*Esses elementos abaixo representam largura e altura e se somam ao padding e ao margin*/
+            width: 250px;
+            height: 300px;
+
+            /*tampo para o margin quanto para o padding, podemos abreviar.
+            o uso correto na sequencia é: 
+            p{
+                margin/padding-top 0px;
+                margin/padding-right: 1px;
+                margin/padding-button: 2px;
+                margin/padding-left: 3px;
+        }
+        
+            o formato abreviado ficaria assim:
+            p{ padding/margin: 0px 1px 2px 3px; }
+
+            Lembrando sempre que a sequencia é representada formato horario "cima, direita, baixo e esqueda"*/
+
+
+
+        }
+        h2{
+            text-transform:uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            color: palevioletred;
+            background-color: yellowgree ;
+            /*para inserir borda, são necessarios pelo menos esses três elemntos "border-style: border-widt: border-color"
+            podendo ser abrevido na mesma sequancia
+            h2{ border: groove 10px green;}
+            h2{ border-top:solid 10px red;*/
+            border-top-style: solid;
+            border-right-width: 10px;
+            border-bottom-color: red;
+            border-left-color: #ff00ff;
+            padding: 20px;
+        }
+
+        p{
+            font-variant: small-caps;
+            text-align: justify;
+            text-decoration: underline;
+            text-indent: 20px;
+            text-transform:none ;
+        }
+        /* no mundo CSS utiliza # para utilizar o ID*/
+        #destaque{
+            color: brown;
+            background-color: yellow;
+        }
+        /*no css usamos o "." para chamar as class*/
+        .destaque{
+            color: green;
+        }
+    </style>
+    <!--quando termina o style é o fim do CSS-->
+</head>
+<body>
+    <h1>Pagina de Boas vindas para <b>Heloisa!</b></h1>
+    <hr>
+    <h2>Criando uma pagina sonho!</h2>
+    <p>Vamos aqui listar as principais paginas que a Heloisa gosta:</p>
+    <p>
+
+        <ol>
+            <li><a href="http://tiktok.com" target="_blank"> <img src="/Imagens Iconis/Tiktok.png"></a></li>
+            <li><a href="http://youtube.com.br" target="_blank"><img src="/Imagens Iconis/Youtube.png"></a></img></li>
+            <li><a href="http://kwai.com" target="_blank"><img src="/Imagens Iconis/Kwai.png"></a></img></li>
+        </ol>
+
+    </p>
+
+    <p id="destaque">Mussum Ipsum, cacilds vidis litro abertis. Vehicula non. Ut sed ex eros. 
+        Vivamus sit amet nibh non tellus tristique interdum.Nec orci ornare consequat. 
+        Praesent lacinia ultrices consectetur. Sed non ipsum felis.
+        Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.
+        Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
+        </p>
+    <p>Casamentiss faiz malandris se pirulitá.Atirei o pau no gatis, per gatis num morreus.
+        Quem num gosta di mé, boa gentis num é.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p> 
+        <!--Normalmente utiliza class ao inves do id, pois assim é possivel add mais de um, poiso "id" só é possivel
+        um unico atributo por pagina e "class" você pode utilizar varios-->  
+    <p class="destaque" >Casamentiss faiz malandris se pirulitá.Atirei o pau no gatis, per gatis num morreus.
+         Quem num gosta di mé, boa gentis num é.Copo furadis é disculpa de bebadis, arcu quam euismod magna.</p> 
+        
+
+</body>
+</html>
