@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    margin: 0;
+}
+.hero{
+    background-image: url(../imagens/bg-3.jpg);
+    height: 500px;
+    background-position: right center;
+    background-size: cover;
+}
+.hero-content{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 46px;
+    text-shadow: 3px 3px 2px #333;
+}
+.hero nav ul{
+    text-align: right;
+    margin: 00px 50px 0 0;
+}
+.hero nav li{
+    display:  inline-block;
+    list-style: none;    
+    border: 1px solid white; 
+    margin-left: 10px; 
+}
+.hero a{    
+    background: rgba(0,0,0,0.4);    
+    display: block;
+    padding: 15px;
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.hero a :hover{
+    background: rgba(0,0,0,0.5);
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+.content-section{
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+}
+/*.content-section{
+    display:  inline-block;
+    list-style: none;    
+    border: 1px solid white; 
+    margin-left: 10px; 
+}*/
+.content-section2{
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+}
+.content-header h2{
+    border-bottom: solid 2px #ccc;
+    padding: 10px;
+    background: #eee;
+}
+.rodape{
+    color: white;
+    text-align: center;
+    background-color: rgb(95, 93, 93);
+    padding: 10px;
+    text-shadow: 3px 3px 3px black;
+    margin-top: 10px;
+    line-height: 80px;
+    font-size: 14px;
+}
