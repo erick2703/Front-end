@@ -1,0 +1,8 @@
+ /* esta referenciando a ação da ul que está dentro da li (com isso eu escondo o conteudo)*/
+      /*li:hover{
+        background: #ccc;
+    }
+    li:hover ul{
+        display: block;
+    }*/
+<!--Listas alinhadas, que são listas, uma dentro da outra, podendo ser <ul> ou <ol>-->
