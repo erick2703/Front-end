@@ -1,0 +1,112 @@
+<!doctype html>
+<!-- doctype informa ao agente de usuario a versão do html que deve ser renderizada-->
+<html lang="pt-br">
+    <head>
+        <title> pagina de exemplo estrutura basica </title>
+        <meta charset="utf-8">
+        <meta name="author" content="Daniel">
+        <meta name="description" content="descrição bacanuda">
+        <meta name="keywords" content="html5, tecnologia">
+        
+        <style>
+            body{
+                font-family: sans-serif;
+            }          
+            
+            table{
+                border-collapse: collapse;
+                width: 80%;
+                margin: auto;
+                background: beige;
+            }
+            
+            th{
+                background: #bfc361;
+                border: 2px solid chocolate;
+                padding: 15px;
+            }
+            
+            td{
+                border: 1px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        
+        <!--Tag para iniciar uma tabela -->
+            <!-- tags semânticas
+            <thead> = cabeçalho da tabela
+            <tbody> = corpo da tabela
+            <tfoot> = o roda pé da tabela, porém ele sempre deve vir antes do <tbody>...
+                Tgs de tabelas
+            <table> de inicio de tabela
+            <tr> tablerool na sequencia 
+            <td> table data (dado da tabela)   -->
+        <table>    
+            
+            <caption>Tabela de preços de cursos</caption>
+            
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Curso</th>
+                    <th>Investimento</th>
+                </tr>
+            </thead>
+            
+            <tfoot>
+                <tr><!-- Para mesclar coludas utilizamos o atributo colspan="quantidade de colunas a serem mescladas"-->
+                    <td colspan="3">Valores sujeitos a alterações sem prévio aviso</td>
+                </tr>
+            </tfoot>
+            
+            <tbody>
+                <tr><!--Para mesclar linhas utilizamos o atributo rowspan="quantidade de linhas a serem mescladas"-->
+                    <td rowspan="3">Design</td>
+                    <td>InDesign</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr>
+                    
+                    <td>Photoshop</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr>
+                    
+                    <td>Illustrator</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="4">Development</td>
+                    <td>HTML</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr>
+                    
+                    <td>CSS</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                
+                <tr>
+                    
+                    <td>Javascript</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    
+                    <td>PHP</td>
+                    <td>R$ 1.000,00</td>
+                </tr>
+            </tbody>
+            
+        </table>
+        
+    </body>
+</html>
