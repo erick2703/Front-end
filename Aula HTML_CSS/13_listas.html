@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        li ul{
-            display: none;
+        li ul{ /* esta referenciando a ação da ul que está dentro da li (com isso eu escondo o conteudo)*/
+           /* display: none;*/
+           height: 0;
+           overflow: hidden;
+           transition: height 0.5s;
         }
+        li:hover{
+        background: #ccc;
+    }
+    li:hover ul{
+       /* display: block;*/
+       height: 50px;
+    }
+    
     </style>
 </head>
 <body>
-    <ul>
+    <ul><!--Listas alinhadas, que são listas, uma dentro da outra, podendo ser <ul> ou <ol>-->
         <li>item 1</li>
-        <li>item 2</li>
+        <li>item 2
             <ul>
                 <li>item 2.1</li>
                 <li>item 2.2</li>
